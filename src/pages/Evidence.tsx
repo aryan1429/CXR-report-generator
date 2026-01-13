@@ -1,7 +1,8 @@
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { useState, useMemo } from 'react';
-import { Search, SlidersHorizontal, ChevronDown, X, FileText, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
-import { SAMPLE_CASES, XRayCase } from '../utils/sampleData';
+import { Search, SlidersHorizontal, ChevronDown, X, FileText, TrendingUp } from 'lucide-react';
+import { SAMPLE_CASES } from '../utils/sampleData';
+import type { XRayCase } from '../utils/sampleData';
 
 type SortOption = 'weight' | 'similarity' | 'confidence' | 'disagreement';
 type FilterLabel = 'all' | 'Normal' | 'Cardiomegaly' | 'Pneumonia' | 'Effusion' | 'Pneumothorax';

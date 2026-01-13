@@ -1,7 +1,8 @@
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { useState, useMemo } from 'react';
 import { AlertTriangle, Scale, Trash2, RotateCcw, CheckCircle, XCircle, Info } from 'lucide-react';
-import { SAMPLE_CASES, XRayCase } from '../utils/sampleData';
+import { SAMPLE_CASES } from '../utils/sampleData';
+import type { XRayCase } from '../utils/sampleData';
 
 function MiniEvidenceCard({ caseData, isPruned }: { caseData: XRayCase; isPruned: boolean }) {
     return (
