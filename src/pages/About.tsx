@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
 import { Brain, Target, Lightbulb, Users, BookOpen, ExternalLink, Github, Mail } from 'lucide-react';
 
+import kiranAvatar from '../assets/kiran.png';
+import aryanAvatar from '../assets/aryan.jpeg';
+import renukaAvatar from '../assets/renuka.png';
+
 const teamMembers = [
-    { name: 'Student Name 1', role: 'ML & Backend', avatar: '👨‍💻' },
-    { name: 'Student Name 2', role: 'Frontend & UI', avatar: '👩‍💻' },
-    { name: 'Student Name 3', role: 'Research & Data', avatar: '🧑‍🔬' },
+    { name: 'Kiran Krishna', role: 'ML & Backend', avatar: kiranAvatar },
+    { name: 'Aryan Aligeti', role: 'Frontend & UI', avatar: aryanAvatar },
+    { name: 'Renuka Manohari', role: 'Research & Data', avatar: renukaAvatar },
 ];
 
 const features = [
@@ -119,9 +123,11 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {teamMembers.map((member, i) => (
                         <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
-                            <div className="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center text-2xl">
-                                {member.avatar}
-                            </div>
+                            <img
+                                src={member.avatar}
+                                alt={member.name}
+                                className="w-12 h-12 rounded-full object-cover border-2 border-indigo-500/30"
+                            />
                             <div>
                                 <p className="font-medium text-white">{member.name}</p>
                                 <p className="text-sm text-gray-400">{member.role}</p>
@@ -131,7 +137,7 @@ export default function About() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/10">
                     <p className="text-sm text-gray-400">
-                        <span className="font-medium text-white">Project Guide:</span> Prof. Guide Name, Department of Computer Science
+                        <span className="font-medium text-white">Project Guide:</span> Prof. Ashok Kumar, Department of IDK
                     </p>
                 </div>
             </motion.div>
