@@ -1,6 +1,5 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, UploadCloud, Search, AlertTriangle, FileText, Info, Activity } from 'lucide-react';
+import { LayoutDashboard, UploadCloud, Search, AlertTriangle, FileText, Info } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { cn } from '../../lib/utils';
 
@@ -17,8 +16,8 @@ export function Sidebar() {
     return (
         <aside className="w-64 bg-card/50 backdrop-blur-xl border-r border-white/5 h-screen flex flex-col fixed left-0 top-0 z-20">
             <div className="p-6 flex items-center gap-3 border-b border-white/5">
-                <div className="p-2 bg-indigo-500/20 rounded-lg">
-                    <Activity className="w-6 h-6 text-indigo-400" />
+                <div className="p-1 bg-indigo-500/20 rounded-lg overflow-hidden">
+                    <img src="/logo.png" alt="X-Ray Insight Logo" className="w-8 h-8 object-contain" />
                 </div>
                 <div>
                     <h1 className="font-bold text-lg text-white tracking-tight">X-Ray Insight</h1>
